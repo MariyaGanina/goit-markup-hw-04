@@ -505,7 +505,7 @@ align-items: center;
   border-radius: 4px;
 }
 
-.clients-link:hover,
+/* .clients-link:hover,
 .clients-link:focus {
   border-color: var(--accent-color);
 }
@@ -513,7 +513,20 @@ align-items: center;
 .clients-link .icon:hover,
 .clients-link .icon:focus {
   fill: var(--accent-color);
+} */
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--accent-color);
 }
+
+.clients-link:hover>.icon,
+.clients-link:focus>.icon {
+  fill: var(--accent-color);
+}
+
+
+
 
 /* Футер */
 
@@ -564,7 +577,24 @@ align-items: center;
 
 
 
+
+
+
+
+
 /* draft */
+
+
+.contact .link{
+  display: flex;
+  align-items: center;
+}
+
+.icon-contacts {
+  fill: currentColor;
+  margin-right: 10px;}
+
+
 
  /* .contact .link{
   display: flex;
@@ -574,10 +604,10 @@ align-items: center;
 
 /* justify-content: center;
 
-.icon-contacts{
-fill:currentColor ;
-margin-right: 10px;
-} 
+
+
+
+
 
 
 .footer-socials{
@@ -588,3 +618,9 @@ flex-direction: column;
 .footer .title{
   color: var(--back-color);
 } */
+
+.examples .item:hover,
+.examples .item:focus{
+  filter: drop-shadow()
+
+}
